@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript events and basic interactivity.</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <label for = "themeToggle" id="themeLabel">Dark Mode:</label>
+    <input type="checkbox" id="themeToggle">
+    <h1>This is a basic form showcasing event handling and interactive elements.</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()">
+        <label for="showPassword">Show Password</label>
+        <br>
+        <button type="submit" id="btn" class="btn">Submit</button>
+    </form>
+    <button id="more-btn" class="btn">Add more text</button>
+    <p id="New"></p>
+</body>
+</html>
